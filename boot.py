@@ -68,11 +68,11 @@ def main():
                     first_chat_name = "unknown"
 
                 if first_chat_text.lower() == '/start':
-                    wikipedia_bot.send_message(first_chat_id, 'You can reach detailed information by typing / about ' + first_chat_name)
+                    wikipedia_bot.send_message(first_chat_id, '/about ile detaylı bilgiye ulaşabilirsınız  ' + first_chat_name)
                     new_offset = first_update_id + 1
 
                 if first_chat_text.lower() == '/about':
-                    wikipedia_bot.send_message(first_chat_id, 'Nickname checker bot for psn.Enter the nickname for nickname check, the result will appear in 5 seconds.' + first_chat_name)
+                    wikipedia_bot.send_message(first_chat_id, 'wikipedia özgür ansiklopedi. aramak istediğiniz kelimeyi giriniz :' + first_chat_name)
                     new_offset = first_update_id + 1
                 if first_chat_text.lower() == 'merhaba':
                     wikipedia_bot.send_message(first_chat_id, "merhaba " + first_chat_name)
